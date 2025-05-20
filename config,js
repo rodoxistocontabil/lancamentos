@@ -1,0 +1,9 @@
+// Configuração do Supabase
+const { createClient } = supabase;
+
+const supabaseUrl = 'https://spxnwnqgsnbxhqlkqpqd.supabase.co ';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNweG53bnFnc25ieGhxbGtxcHFkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc3MzU0NDIsImV4cCI6MjA2MzMxMTQ0Mn0.kNa77OwQaDFSMw1hGxwBYNdRksODQV66jou8HZ9h2Mw';
+
+const supabaseClient = createClient(supabaseUrl, supabaseKey);
+
+window.supabase = supabaseClient;
