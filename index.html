@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contabili - Automação Contábil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Contabili - Automação Contábil</h1>
+  </header>
+
+  <main>
+    <!-- CADASTRO -->
+    <section id="cadastro">
+      <h2>Cadastro da Empresa</h2>
+      <form id="form-cadastro">
+        <label>Razão Social:
+          <input type="text" id="razao_social" required>
+        </label>
+        <label>CNPJ:
+          <input type="text" id="cnpj" required>
+        </label>
+        <label>UF:
+          <input type="text" id="uf" maxlength="2" required>
+        </label>
+        <label>Unidade:
+          <select id="unidade" required>
+            <option value="Matriz">Matriz</option>
+            <option value="Filial">Filial</option>
+            <option value="SCP">SCP</option>
+          </select>
+        </label>
+        <label>Código no Sistema Contábil:
+          <input type="text" id="codigo_sistema">
+        </label>
+        <button type="submit">Salvar Empresa</button>
+      </form>
+    </section>
+
+    <!-- LISTA DE EMPRESAS -->
+    <section id="lista-empresas">
+      <h2>Empresas Cadastradas</h2>
+      <ul id="empresas-lista"></ul>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
